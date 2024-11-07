@@ -115,4 +115,6 @@
 
 * [https://github.com/C0DER11101/learningLua/blob/doLua/basics/programs/prog1.lua](https://github.com/C0DER11101/learningLua/blob/doLua/basics/programs/prog1.lua).
 
----
+<p align="center">
+ooOoo
+</p>
