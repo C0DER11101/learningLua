@@ -41,12 +41,10 @@
 	```lua
 	x = x or v
 	```
-	<br>
 	which is equivalent to:<br>
 	```lua
 	if not x then x = v end
 	```
-
 
 # Programs
 
