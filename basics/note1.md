@@ -99,8 +99,6 @@
 
 * Lua concatenates two strings using the `..` operator. If the strings are numbers then there must a space between the `..` and the two strings otherwise Lua confuses the first dot with a decimal point.
 
-<img src="https://github.com/C0DER11101/learningLua/blob/doLua/basics/images/img6.png" width="50%" height="50%">
-
 * No conversion from string to number or vice-versa occurs when they are compared using the `==` operator.
 
 <img src="https://github.com/C0DER11101/learningLua/blob/doLua/basics/images/img7.png" width="50%" height="50%">
