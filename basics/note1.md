@@ -54,6 +54,7 @@
 * The `type` function gives the type name of a given value.
 
 <img src="https://github.com/C0DER11101/learningLua/blob/doLua/basics/images/img2.png" width="50%" height="50%">
+
 * The type-name returned by the `type` function for any given value is of string type.
 * Variables have no pre-defined type, any variable may contain values of any type.
 
