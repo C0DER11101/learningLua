@@ -1,4 +1,4 @@
--- program taken from Programming in Lua: Chapter-2: Section 2.5
+-- program taken from Programming in Lua: Chapter-2 - Section 2.5
 
 a = {}; -- creating a table and storing its reference in 'a'
 
