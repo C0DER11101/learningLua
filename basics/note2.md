@@ -1,6 +1,6 @@
 # Tables
 
-* Table type implementa associative arrays.
+* Table type implements associative arrays.
 * Associative array is an array that can be indexed with numbers as well as with strings or any other value of the language except **nil**.
 * Tables have no fixed size.
 * Tables are the main, powerful and the only data structuring mechanism in Lua.
