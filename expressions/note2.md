@@ -18,7 +18,7 @@ a = {}; a.x = 0; a.y = ;
 * Record-style and list-style initializations can be mixed in the same constructor.
 * Limitations of tables:
 	* Fields can't be initialized with negative indices.
-	* Fields can't be initialized with string indices that not proper identifiers.
+	* Fields can't be initialized with string indices that are not proper identifiers.
 * Solution to limitations:
 	* Explicitly write the index to be initialized <em>as an expression, between square brackets</em>.
 	* <ins>Note</ins>: This can also be considered a more general format for initializing fields in a table.
