@@ -41,7 +41,7 @@
 
 ### `if` `then` `else`
 
-* An `if` statement its condition and executes its `then` part or its `else` part accordingly.
+* An `if` statement tests its condition and executes its `then` part or its `else` part accordingly.
 * The `else` part is optional.
 * For nested `if`s, `elseif` can be used.
 
