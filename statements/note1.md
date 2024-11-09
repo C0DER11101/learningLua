@@ -63,6 +63,7 @@
 * [https://github.com/C0DER11101/learningLua/blob/doLua/statements/programs/prog3.lua](https://github.com/C0DER11101/learningLua/blob/doLua/statements/programs/prog3.lua).
 * [https://github.com/C0DER11101/learningLua/blob/doLua/statements/programs/prog4.lua](https://github.com/C0DER11101/learningLua/blob/doLua/statements/programs/prog4.lua).
 * [https://github.com/C0DER11101/learningLua/blob/doLua/statements/programs/prog5.lua](https://github.com/C0DER11101/learningLua/blob/doLua/statements/programs/prog5.lua).
+* [https://github.com/C0DER11101/learningLua/blob/doLua/statements/programs/prog6.lua](https://github.com/C0DER11101/learningLua/blob/doLua/statements/programs/prog6.lua).
 
 <p align="center">
 ooOoo
