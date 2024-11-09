@@ -2,7 +2,7 @@
 
 * Lua supports conventional statements:
 	* assignment.
-	* constrol structures.
+	* control structures.
 	* procedure calls.
 * Lua also supports non-conventional statements:
 	* multiple assignments.
