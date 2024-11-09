@@ -47,7 +47,7 @@
 
 ### `while`
 
-* Execute process same as C-`while`.
+* Execution process same as C-`while`.
 
 ### `repeat`
 
