@@ -10,7 +10,7 @@
 
 * [https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog14.lua](https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog14.lua).
 * [https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog15.lua](https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog15.lua).
-* [https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog16.lua](https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog16.lua).[^2]
+* [https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog16.lua](https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog16.lua).[^longnote]
 [^longnote]
 
 [^longnote]: Couldn't understand what was actually mentioned in the reference manual about `select` because I had taken the point about "selecting a specific result returned from a functino" literally. So, I went [here](https://www.tutorialspoint.com/select-function-in-lua-programming) and tried out this program myself and then everything was clear in my head.
