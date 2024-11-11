@@ -1,12 +1,3 @@
--- return no results
-function foo0()
-end
-
--- return one result
-function foo1()
-	return 'a'
-end
-
 -- return two results
 function foo2()
 	return 'a', 'b'
