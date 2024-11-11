@@ -4,10 +4,16 @@
 * When this function is called, all its arguments are collected in a single table, which the function accesses as a hidden parameter named `arg`.
 * Besides those arguments, the `arg` table has an extra field, `n`, with the actual number of arguments collected.[^1]
 [^1]: [https://jdhao.github.io/2022/12/02/lua-variadic-arguments/](https://jdhao.github.io/2022/12/02/lua-variadic-arguments/).
+* To select a specific result returned from a function, the `select()` function can be used.
 
 # Programs
 
 * [https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog14.lua](https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog14.lua).
+* [https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog15.lua](https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog15.lua).
+* [https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog16.lua](https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog16.lua).[^2]
+[^longnote]
+
+[^longnote]: Couldn't understand what was actually mentioned in the reference manual about `select` because I had taken the point about "selecting a specific result returned from a functino" literally. So, I went [here](https://www.tutorialspoint.com/select-function-in-lua-programming) and tried out this program myself and then everything was clear in my head.
 
 <p align="center">
 ooOoo
