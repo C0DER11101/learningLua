@@ -27,7 +27,7 @@ foo = function (x) return 2 * x end
 function sortByGrade(name, grades)
 	table.sort(name, function (n1, n2) return grades[n1] > grades[n2] end) --[[
 	                  ^                         ^
-			  |                         |___ grades is neither local to this anonymous function nor it's global to it, it's an external local variable to this functino
+			  |                         |___ grades is neither local to this anonymous function nor it's global to it, it's an external local variable to this function
 			  |
 			  |__ an anonymous function that's using `grades' table of sortByGrade
 ]]
