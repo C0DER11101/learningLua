@@ -64,7 +64,7 @@ This function basically returns an empty table constructor when it is called as:
 tableA = createTable()
 tableB = createTable()
 ```
-But here `tableA` and `tableB` are two different tables, even they are referring to an emtpy table, but those two are different empty tables. This means that a function returning an anonymous function won't return the same anonymous function everytime it is called (the returned anonymous function will have different addresses).
+But here `tableA` and `tableB` are two different tables, even though they are referring to an emtpy table, but those two are different empty tables. This means that a function returning an anonymous function won't return the same anonymous function everytime it is called (the returned anonymous function will have different addresses).
 
 * [https://stackoverflow.com/a/6936015](https://stackoverflow.com/a/6936015).
 	* [https://en.wikipedia.org/wiki/Closure_(computer_programming)](https://en.wikipedia.org/wiki/Closure_(computer_programming)).
