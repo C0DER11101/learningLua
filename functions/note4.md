@@ -97,6 +97,8 @@ will result in displaying the numbers<br> <code>1</code><br><code>2</code><br><c
 Now, as per what I have understood, the non-local variable `x` in function `b` is <a href="https://en.wikipedia.org/wiki/Name_binding"><em>bound</em></a> to the corresponding variable `x` in the lexical environment of the function `a` at the time closure `b` is created. So, when the closure is entered at a later time, possibly with a different lexical environment, the function `b` is executed with its non-local variables referring to the ones captured by the closure and not the current environment.
 
 </details>
+* Everytime, `newCounter` is called, it will create a new local variable `i` and we will get a new closure, acting over that new variable.
+* Closures are useful for <em>callback</em> functions.
 
 # Programs
 
