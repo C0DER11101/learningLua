@@ -11,7 +11,7 @@ for key in ipairs(network) do
 	print(network[key].name, network[key].IP);
 end
 
-table.sort(network, function(a, b) return a.name < b.name end)
+table.sort(network, function(a, b) return a.name < b.name end) -- sort the values of the table based on the `name' field
 
 print"-----------------------------"
 
