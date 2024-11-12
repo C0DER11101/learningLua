@@ -33,6 +33,70 @@ function sortByGrade(name, grades)
 ]]
 end
 ```
+* Because functions are first-class values, they can be returned from another function as well:<br>
+```lua
+function newCounter()
+	local i = 0
+	return function () -- anonymous function (function that has no name)
+		i = i + 1
+		return i
+	end
+end
+```
+the value `i` that the anonymous function uses is the <em>external local variable</em> (For some reason, I feel uncomfortable using the term <em>upvalue</em>) to keep its counter. But by the time we call the anonymous function, `i` is already out of scope because the function that created it (`newCounter`) has returned. Nevertheless, Lua handles that situation correctly, using the concept of <em>closures</em>.
+* Any function is a closure.[^3]
+[^3]: [https://www.tutorialspoint.com/what-are-closures-in-lua-programming](https://www.tutorialspoint.com/what-are-closures-in-lua-programming).
+
+<details>
+<summary>Closures</summary>
+I am linking the following resources that I used to understand about closures. I don't know how much I have understood it but still these links helped me get a rough idea about how closures work.
+
+* [https://stackoverflow.com/a/6935877](https://stackoverflow.com/a/6935877).
+
+Consider the following Lua program (which I have taken from the link above):<br>
+```lua
+function createTable()
+	return {}
+end
+```
+This function basically returns an empty table constructor when it is called as:<br>
+```lua
+tableA = createTable()
+tableB = createTable()
+```
+But here `tableA` and `tableB` are two different tables, even they are referring to an emtpy table, but those two are different empty tables. This means that a function returning an anonymous function won't return the same anonymous function everytime it is called (the returned anonymous function will have different addresses).
+
+* [https://stackoverflow.com/a/6936015](https://stackoverflow.com/a/6936015).
+	* [https://en.wikipedia.org/wiki/Closure_(computer_programming)](https://en.wikipedia.org/wiki/Closure_(computer_programming)).
+	* [https://en.wikipedia.org/wiki/Closure_(computer_programming)#Implementation_and_theory](https://en.wikipedia.org/wiki/Closure_(computer_programming)#Implementation_and_theory).
+* [https://stigmax.gitbook.io/lua-guide/concepts/closures](https://stigmax.gitbook.io/lua-guide/concepts/closures).
+* [https://www.reddit.com/r/learnjavascript/comments/1auj4pr/lexical_environment_execution_context_and_other/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button](https://www.reddit.com/r/learnjavascript/comments/1auj4pr/lexical_environment_execution_context_and_other/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) &rarr; from here I only took the fairly simple definition of _lexical environment_:<br>
+> the Lexical Environment is the structure that actually stores local variables and functions.
+* [https://personal.utdallas.edu/~gupta/courses/apl/lambda.pdf](https://personal.utdallas.edu/~gupta/courses/apl/lambda.pdf) &rarr; from here I understood about lambda calculus (only about functions, expressions, free variables and bound variables, didn't go any further than that).
+* [https://ignore.pl/environments_in_lua_5_2_and_beyond.html](https://ignore.pl/environments_in_lua_5_2_and_beyond.html).<br>
+Consider the following program (again, taken from the link above):<br>
+```lua
+function a()
+	local x = 0
+	function b()
+		x = x + 1
+		print(x)
+	end
+
+	return b
+end
+```
+`a` returns the function `b`, so expressions like this:<br>
+```lua
+c1 = a()
+c1()
+c1()
+c1()
+```
+will result in displaying the numbers<br> <code>1</code><br><code>2</code><br><code>3</code><br>
+Now, as per what I have understood, the non-local variable `x` in function `b` is <a href="https://en.wikipedia.org/wiki/Name_binding"><em>bound<em></a> to the corresponding variable `x` in the lexical environment of the function `a` at the time closure `b` is created. So, when the closure is entered at a later time, possibly with a different lexical environment, the function `b` is executed with its non-local variables referring to the ones captured by the closure and not the current environment.
+
+</details>
 
 # Programs
 
@@ -43,6 +107,9 @@ end
 * [https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog23.lua](https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog23.lua).[^2]
 [^2]: [https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797#cursor-controls](https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797#cursor-controls), [https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797#erase-functions](https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797#erase-functions), [https://www.codecademy.com/resources/docs/lua/strings/format](https://www.codecademy.com/resources/docs/lua/strings/format).
 * [https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog24.lua](https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog24.lua).
+* [https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog25.lua](https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog25.lua).
+* [https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog26.lua](https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog26.lua).
+* [https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog27.lua](https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog27.lua).
 
 <p align="center">
 ooOoo
