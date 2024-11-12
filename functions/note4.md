@@ -25,11 +25,12 @@ foo = function (x) return 2 * x end
 * Inside this enclosed function the local variable of the enclosing function is neither a global variable nor a local variable. It's an <em>external local variable</em> or an <em>upvalue</em>.<br>
 ```lua
 function sortByGrade(name, grades)
-	table.sort(name, function (n1, n2) return grades[n1] > grades[n2] end)
+	table.sort(name, function (n1, n2) return grades[n1] > grades[n2] end) --[[
 	                  ^                         ^
-			  |                         |__ grades is neither local to this anonymous function nor it's global to it, it's an external local variable to this functino
+			  |                         |___ grades is neither local to this anonymous function nor it's global to it, it's an external local variable to this functino
 			  |
 			  |__ an anonymous function that's using `grades' table of sortByGrade
+]]
 end
 ```
 
