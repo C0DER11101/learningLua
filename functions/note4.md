@@ -69,11 +69,11 @@ But here `tableA` and `tableB` are two different tables, even though they are re
 * [https://stackoverflow.com/a/6936015](https://stackoverflow.com/a/6936015).
 	* [https://en.wikipedia.org/wiki/Closure_(computer_programming)](https://en.wikipedia.org/wiki/Closure_(computer_programming)).
 	* [https://en.wikipedia.org/wiki/Closure_(computer_programming)#Implementation_and_theory](https://en.wikipedia.org/wiki/Closure_(computer_programming)#Implementation_and_theory).
-* [https://stigmax.gitbook.io/lua-guide/concepts/closures](https://stigmax.gitbook.io/lua-guide/concepts/closures).
 * [https://www.reddit.com/r/learnjavascript/comments/1auj4pr/lexical_environment_execution_context_and_other/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button](https://www.reddit.com/r/learnjavascript/comments/1auj4pr/lexical_environment_execution_context_and_other/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) &rarr; from here I only took the fairly simple definition of _lexical environment_:<br>
 > the Lexical Environment is the structure that actually stores local variables and functions.
 * [https://personal.utdallas.edu/~gupta/courses/apl/lambda.pdf](https://personal.utdallas.edu/~gupta/courses/apl/lambda.pdf) &rarr; from here I understood about lambda calculus (only about functions, expressions, free variables and bound variables, didn't go any further than that).
 * [https://ignore.pl/environments_in_lua_5_2_and_beyond.html](https://ignore.pl/environments_in_lua_5_2_and_beyond.html).<br>
+* [https://stigmax.gitbook.io/lua-guide/concepts/closures](https://stigmax.gitbook.io/lua-guide/concepts/closures).
 Consider the following program (again, taken from the link above):<br>
 ```lua
 function a()
