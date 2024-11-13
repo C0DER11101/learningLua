@@ -1,3 +1,5 @@
+-- Program taken from Programming in Lua: Chapter-6 - Section 6.3
+
 function room1()
 	local move = io.read()
 	if move == "south" then return room3()
