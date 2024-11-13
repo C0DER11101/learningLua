@@ -4,7 +4,7 @@ _f, _s, _var = ipairs(a);
 
 --[[
 
-_f is a iterator function: this is kept internal by the generic for
+_f is an iterator function: this is kept internal by the generic for
 
 _s is a table (invariant state?)
 
