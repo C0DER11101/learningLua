@@ -50,7 +50,7 @@ do
 	end
 end
 ```
-If `_f` is the iterator function, the invariant state is `_s` and the initial value for the control variable is $a_0$, the control variable will loop over the values $a_1$ = \_f(\_s, \_$a_0$), $a_2$ = \_f(\_s, $a_1$) and so on, until $a_i$ is `nil`.
+If `_f` is the iterator function, the invariant state is `_s` and the initial value for the control variable is $a_0$, the control variable will loop over the values $a_1$ = \_f(\_s, $a_0$), $a_2$ = \_f(\_s, $a_1$) and so on, until $a_i$ is `nil`.
 * If the `for` has other variables, they simply get the extra values returned by each call to `f`.
 
 # Programs
