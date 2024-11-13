@@ -100,6 +100,29 @@ Now, as per what I have understood, the non-local variable `x` in function `b` i
 
 * Everytime, `newCounter` is called, it will create a new local variable `i` and we will get a new closure, acting over that new variable.
 * Closures are useful for <em>callback</em> functions.
+* Example of callback function:<br>
+```lua
+function digitButton(digit)
+	return Button{
+		label = digit,
+		action = function()
+			add_to_display(digit)
+		end
+	}
+end
+```
+Each button has a callback function to be called when the user presses the button. The example above creates buttons for the digits for a digital calculator. Here, `Button` is a toolkit function that creates new buttons, `label` is the button label and `action` is the callback function to be called when the button is pressed. The callback function can be called a long time after `digitButton` did its task and after the local variable `digit` went out of scope, but it can still access that variable.
+* Lua allows re-defining of even pre-defined functions.<br>
+```lua
+do
+	local oldSin = math.sin
+	math.sin = function (x)
+		return oldSin(x * math.pi / 180)
+	end
+end
+```
+This is a cleaner way to re-define a pre-defined function. The original `math.sin` is stored in a private variable called `oldSin` which can only be accessed via the new version or the new `math.sin`. _This is just another way of demonstrating closures_. Even when the `do`-`end` scope is over and `oldSin` is out of scope `math.sin` will continue to <em>refer</em> to `oldSin`.
+* This feature is helpful in creating secure environments, called <em>sandboxes</em> which are helpful in running untrusted code.
 
 # Programs
 
@@ -113,6 +136,8 @@ Now, as per what I have understood, the non-local variable `x` in function `b` i
 * [https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog25.lua](https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog25.lua).
 * [https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog26.lua](https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog26.lua).
 * [https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog27.lua](https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog27.lua).
+* [https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog28.lua](https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog28.lua).
+* [https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog29.lua](https://github.com/C0DER11101/learningLua/blob/doLua/functions/programs/prog29.lua).
 
 <p align="center">
 ooOoo
