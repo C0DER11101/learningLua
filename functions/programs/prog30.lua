@@ -18,3 +18,16 @@ print(maths.sub(10, 20));
 print(maths.mul(10, 20));
 print(maths.div(12, 20));
 print(maths.div(12, 0));
+
+simpleTable = {
+	foo = function()
+		print("FOO")
+	end,
+
+	loo = function()
+		print("LOO")
+	end
+}
+
+simpleTable.foo()
+simpleTable.loo()
