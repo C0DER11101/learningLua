@@ -16,18 +16,19 @@ for <var-list> in <exp-list> do
 end
 ```
 where `<var-list>` is a list of one or more variable names, separated by commas, and `<exp-list>` is a list of one or more expressions, also separated by commas. Most often, the expression list has only one element, a call to an iterator factory.
-	* Example:<br>
-	```lua
-	for k, v in pairs(t) do
-		print(k, v)
-	end
-	```
-	the list of variables is `k, v` and the list of expressions has the single element `pairs(t)`. Often the list of variables has one variable too.<br>
-	```lua
-	for line in io.lines() do
-		io.write(line, '\n')
-	end
-	```
+
+* Example:<br>
+```lua
+for k, v in pairs(t) do
+	print(k, v)
+end
+```
+the list of variables is `k, v` and the list of expressions has the single element `pairs(t)`. Often the list of variables has one variable too.<br>
+```lua
+for line in io.lines() do
+	io.write(line, '\n')
+end
+```
 * The first variable in the list is called the <em>control variable</em>. Its value is never `nil` during the loop. When it becomes `nil`, the loop ends.
 * The first thing the `for` does is to evaluate the expressions after the `in`. These expressions should result in the three values kept by the `for`: the iterator function, the invariant state and the initial value for the control variable. Like in a multiple assignment, only the last(or the only) element of the list can result in more than one value, and the number of values is adjusted to three, extra values being discarded or `nil`s added as needed.
 * When simple iterators are used, the factory returns only the iterator function, so the invariant state and the control variable get `nil`.
