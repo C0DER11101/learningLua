@@ -73,7 +73,7 @@ But here `tableA` and `tableB` are two different tables, even though they are re
 > the Lexical Environment is the structure that actually stores local variables and functions.
 * [https://personal.utdallas.edu/~gupta/courses/apl/lambda.pdf](https://personal.utdallas.edu/~gupta/courses/apl/lambda.pdf) &rarr; from here I understood about lambda calculus (only about functions, expressions, free variables and bound variables, didn't go any further than that).
 * [https://ignore.pl/environments_in_lua_5_2_and_beyond.html](https://ignore.pl/environments_in_lua_5_2_and_beyond.html).<br>
-* [https://stigmax.gitbook.io/lua-guide/concepts/closures](https://stigmax.gitbook.io/lua-guide/concepts/closures).
+* [https://stigmax.gitbook.io/lua-guide/concepts/closures](https://stigmax.gitbook.io/lua-guide/concepts/closures).<br>
 Consider the following program (again, taken from the link above):<br>
 ```lua
 function a()
