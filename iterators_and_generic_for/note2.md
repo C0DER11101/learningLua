@@ -1,4 +1,4 @@
-# stateless iterators
+# Stateless iterators
 
 * A stateless iterator is an iterator that doesn't keep any state by itself. Therefore, the same stateless iterator may be used in multiple loops, avoiding the cost of creating new closures.
 * On each iteration, the `for` loop calls its iterator function with two arguments: the invariant state and the control variable. A stateless iterator generates the next element for the iteration using only these two arguments.
