@@ -1,4 +1,4 @@
--- Program taken from Programming in Lua: Chapter-7
+-- Program taken from Programming in Lua: Chapter-8
 
 print("enter function to be plotted (with variable `x'): ")
 local l = io.read()
