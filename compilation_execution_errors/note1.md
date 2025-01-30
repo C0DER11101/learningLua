@@ -30,7 +30,7 @@ is <em>roughly</em> equivalent to
 ```lua
 g = function () i = i + 1 end
 ```
-but this code is much faster, because it is compiled only once, when the chunk is compiled. In the first code, each call to `loadstring` involves a new compilation. There is one more difference between these two codes, `loadstring` doesn't compile with lexical scoping.
+but the latter snippet is much faster, because it is compiled only once, when the chunk is compiled. In the first code, each call to `loadstring` involves a new compilation. There is one more difference between these two codes, `loadstring` doesn't compile with lexical scoping.
 * Consider this lua program
 ```lua
 local i = 0
