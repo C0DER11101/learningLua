@@ -1,3 +1,5 @@
+-- Program taken from Programming in Lua: Chapter-8
+
 f = loadfile("foo.lua") -- foo is compiled
 
 -- foo("ok") -- ERROR: foo() not defined yet
