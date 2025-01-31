@@ -9,6 +9,7 @@
 3. <a href="https://github.com/C0DER11101/learningLua/tree/doLua/statements">Statements</a>.<br>
 4. <a href="https://github.com/C0DER11101/learningLua/tree/doLua/functions">Functions</a>.<br>
 5. <a href="https://github.com/C0DER11101/learningLua/tree/doLua/iterators_and_generic_for">Iterators and generic <code>for</code></a>.<br>
+6. <a href="https://github.com/C0DER11101/learningLua/tree/doLua/compilation_execution_errors">Compilation, execution and errors</a>.
 </details>
 
 * Source:
