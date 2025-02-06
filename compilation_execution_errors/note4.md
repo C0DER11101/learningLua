@@ -12,6 +12,7 @@
 * <a href="https://github.com/C0DER11101/learningLua/blob/doLua/compilation_execution_errors/programs/prog9.lua">https://github.com/C0DER11101/learningLua/blob/doLua/compilation_execution_errors/programs/prog9.lua</a>.
 * <a href="https://github.com/C0DER11101/learningLua/blob/doLua/compilation_execution_errors/programs/prog10.lua">https://github.com/C0DER11101/learningLua/blob/doLua/compilation_execution_errors/programs/prog10.lua</a>.
 * <a href="https://github.com/C0DER11101/learningLua/blob/doLua/compilation_execution_errors/programs/prog11.lua">https://github.com/C0DER11101/learningLua/blob/doLua/compilation_execution_errors/programs/prog11.lua</a>.
+* <a href="https://github.com/C0DER11101/learningLua/blob/doLua/compilation_execution_errors/programs/prog12.lua">https://github.com/C0DER11101/learningLua/blob/doLua/compilation_execution_errors/programs/prog12.lua</a>.
 
 <p align="center">
 ooOoo
